@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="547.0" prefWidth="848.0" style="-fx-background-color: #ff9d00;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.electro_store.temp.other.ProductCount.CountController">
+   <children>
+      <TableView fx:id="countTable" focusTraversable="false" layoutY="102.0" prefHeight="444.0" prefWidth="848.0" stylesheets="@../../style/product_style.css">
+        <columns>
+          <TableColumn fx:id="dateColumn" prefWidth="150.0" text="Дата" />
+          <TableColumn fx:id="expencesColumn" prefWidth="190.0" text="Затраты, руб" />
+            <TableColumn fx:id="profitColumn" prefWidth="226.0" text="Прибыль, руб" />
+            <TableColumn fx:id="amountColumn" prefWidth="281.0" text="Проданные товары" />
+        </columns>
+      </TableView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="42.0" stroke="BLACK" strokeType="INSIDE" width="848.0" />
+      <Label alignment="CENTER" layoutX="8.0" layoutY="3.0" prefHeight="36.0" prefWidth="835.0" text="УЧЕТ ТОВАРОВ" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic" size="28.0" />
+         </font>
+      </Label>
+      <HBox layoutX="14.0" layoutY="56.0" prefHeight="36.0" prefWidth="314.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="36.0" prefWidth="216.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="25.0" prefWidth="189.0" text="Прибыль за день:">
+                     <font>
+                        <Font name="Century Gothic" size="20.0" />
+                     </font></Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="36.0" prefWidth="75.0">
+               <children>
+                  <Label fx:id="dayLabel" text="0">
+                     <font>
+                        <Font name="Century Gothic" size="20.0" />
+                     </font></Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox layoutX="304.0" layoutY="56.0" prefHeight="36.0" prefWidth="287.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="36.0" prefWidth="236.0">
+               <children>
+                  <Label alignment="CENTER" text="Прибыль за месяц:">
+                     <font>
+                        <Font name="Century Gothic" size="20.0" />
+                     </font></Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label fx:id="mounthLabel" text="0">
+                     <font>
+                        <Font name="Century Gothic" size="20.0" />
+                     </font></Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox layoutX="589.0" layoutY="56.0" prefHeight="36.0" prefWidth="237.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="36.0" prefWidth="222.0">
+               <children>
+                  <Label alignment="CENTER" text="Прибыль за год:">
+                     <font>
+                        <Font name="Century Gothic" size="20.0" />
+                     </font></Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="36.0" prefWidth="120.0">
+               <children>
+                  <Label fx:id="yearLabel" text="0">
+                     <font>
+                        <Font name="Century Gothic" size="20.0" />
+                     </font></Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="124.0" styleClass="derevo" stylesheets="@../../style/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.electro_store.temp.draganddrop.ProductItemController">
+   <children>
+      <VBox prefHeight="33.0" prefWidth="140.0">
+         <children>
+            <HBox prefHeight="24.0" prefWidth="187.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="24.0" prefWidth="35.0">
+                     <children>
+                        <Label fx:id="productIndex" alignment="CENTER" text="1">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER_LEFT" prefHeight="24.0" prefWidth="106.0">
+                     <children>
+                        <Label fx:id="name" text="Продукт">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="9.0" prefWidth="110.0">
+               <children>
+                  <Rectangle arcWidth="5.0" height="9.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="124.0">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.31578946113586426" green="0.21734893321990967" blue="0.020467836409807205" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.006711409395973154">
+                                 <color>
+                                    <Color red="0.31578946113586426" green="0.21734893321990967" blue="0.020467836409807205" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.4969512195121951">
+                                 <color>
+                                    <Color red="0.7368420958518982" green="0.4912280738353729" blue="0.2763157784938812" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.20999999344348907" green="0.18060000240802765" blue="0.00419999985024333" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Rectangle>
+               </children>
+            </HBox>
+            <HBox prefHeight="0.0" prefWidth="188.0">
+               <children>
+                  <Rectangle arcWidth="5.0" height="4.0" opacity="0.64" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="123.0">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="0.042654028436018954" startX="1.0" startY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.3100000023841858" green="0.21389999985694885" blue="0.021700000390410423" opacity="0.0" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.006711409395973154">
+                                 <color>
+                                    <Color red="0.3100000023841858" green="0.21389999985694885" blue="0.021700000390410423" opacity="0.0" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Rectangle>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

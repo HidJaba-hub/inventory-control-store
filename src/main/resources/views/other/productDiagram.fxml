@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="566.0" prefWidth="839.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.electro_store.temp.other.productDiagram.ProductDiagramController">
+   <children>
+      <BarChart fx:id="barChart" layoutX="44.0" layoutY="77.0" prefHeight="433.0" prefWidth="761.0" styleClass="chart-bar" stylesheets="@../../style/other_main.css" AnchorPane.bottomAnchor="56.0" AnchorPane.leftAnchor="44.0" AnchorPane.rightAnchor="44.0" AnchorPane.topAnchor="77.0">
+        <xAxis>
+          <CategoryAxis fx:id="dateBar" side="BOTTOM" tickMarkVisible="false" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="totalBar" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="60.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="849.0" AnchorPane.bottomAnchor="506.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Label alignment="CENTER" layoutX="1.0" layoutY="14.0" prefHeight="31.0" prefWidth="840.0" text="ДИАГРАММА ПРОДАЖИ ТОВАРОВ" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

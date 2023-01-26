@@ -1,0 +1,137 @@
+.button
+{
+    -fx-background-color: transparent;
+    -fx-background-radius: 53;
+    -fx-background-size: cover;
+    -fx-border-radius: 20;
+    -fx-font-family: 'Century Gothic', sans;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 3, 2);
+
+}
+.button.red{
+    -fx-background-image: url('file:C:/Users/user/IdeaProjects/electro_store_client/src/main/resources/images/11.png');
+    -fx-text-fill: #ae1818;
+    -fx-font-size: 23px;
+}
+.button.blue{
+    -fx-background-image: url('file:C:/Users/user/IdeaProjects/electro_store_client/src/main/resources/images/22.png');
+    -fx-text-fill: #2251bf;
+    -fx-font-size: 23px;
+}
+.button.brown{
+    -fx-background-image: url('file:C:/Users/user/IdeaProjects/electro_store_client/src/main/resources/images/33.png');
+    -fx-text-fill: #803104;
+    -fx-font-size: 23px;
+}
+.button.green{
+    -fx-background-image: url('file:C:/Users/user/IdeaProjects/electro_store_client/src/main/resources/images/42.png');
+    -fx-text-fill: #2a4c80;
+    -fx-font-size: 23px;
+}
+.button.violet{
+    -fx-background-image: url('file:C:/Users/user/IdeaProjects/electro_store_client/src/main/resources/images/52.png');
+    -fx-background-size: cover;
+    -fx-text-fill: #523ce5;
+    -fx-font-size: 23px;
+}
+.button.orange{
+    -fx-background-image: url('file:C:/Users/user/IdeaProjects/electro_store_client/src/main/resources/images/62.png');
+    -fx-background-size: cover;
+    -fx-text-fill: #ff8700;
+    -fx-font-size: 23px;
+}
+.button:hover
+{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0), 10, 0, 3, 2);
+    -fx-background-color: rgba(255, 243, 243, 0.26);
+    -fx-border-color: rgba(255,255,255,0.4);
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 53;
+    -fx-background-size: cover;
+}
+.button:pressed
+{
+    -fx-background-size: cover;
+}
+.button:focused{
+    -fx-background-color: rgba(255, 243, 243, 0.26);
+    -fx-border-color: rgba(255,255,255,0.4);
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 53;
+    -fx-background-size: cover;
+}
+.default-color0.chart-pie { -fx-pie-color: #ffd700; }
+.default-color1.chart-pie { -fx-pie-color: #ffa500; }
+.default-color2.chart-pie { -fx-pie-color: #860061; }
+.default-color3.chart-pie { -fx-pie-color: #adff2f; }
+.default-color4.chart-pie { -fx-pie-color: #ff5700; }
+
+.chart-pie-label-line {
+    -fx-stroke: #000;
+    -fx-fill: rgba(0, 0, 0, 0.6);
+}
+
+.chart-pie-label {
+    -fx-fill: rgba(0, 0, 0, 0.6);
+    -fx-font-size: 1em;
+}
+.chart-legend {
+    -fx-background-color:  rgba(255,255,255,0.5);
+    -fx-background-radius: 10;
+    -fx-stroke: #ff0000;
+}
+.chart-bar-label{
+    -fx-text-fill: white;
+}
+.chart-bar {
+    -fx-background-color: rgba(157, 157, 157, 0.32);
+    -fx-background-radius: 0;
+    -fx-background-position: left center;
+}
+.data0.chart-bar {
+    -fx-background-color: rgba(246, 117, 16, 0.88);
+}
+.data1.chart-bar {
+    -fx-background-color: #000;
+}
+.data2.chart-bar {
+    -fx-background-color: #595959;
+}
+.data3.chart-bar {
+    -fx-background-color: #a24400;
+}
+.data4.chart-bar {
+    -fx-background-color: #c78c49;
+}
+.table-view {
+    -fx-base: #1d1d1d;
+    -fx-control-inner-background: #1d1d1d;
+    -fx-background-color: #2f2f2f;
+    -fx-table-cell-border-color: rgba(28, 28, 28, 0);
+    -fx-table-header-border-color: transparent;
+    -fx-padding: 5;
+}
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+.table-view .column-header, .table-view .filler {
+    -fx-size: 30;
+    -fx-border-width: 0 0 2 0;
+    -fx-background-color: transparent;
+    -fx-border-color:
+            transparent
+            transparent
+            derive(-fx-base, 50%)
+            transparent;
+    -fx-border-insets: 0 5 2 0;
+}
+.table-view .column-header .label {
+    -fx-font-size: 10pt;
+    -fx-font-family: "Century Gothic";
+    -fx-text-fill: white;
+    -fx-alignment: center-left;
+    -fx-opacity: 1;
+}
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: #ff9d00;
+}

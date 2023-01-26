@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<fx:root fx:id="root_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="93.0" prefWidth="108.0" styleClass="dragicon" stylesheets="@../../style/application.css" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <VBox prefHeight="93.0" prefWidth="108.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <GridPane styleClass="node-overlay">
+                    <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" />
+                        <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="25.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Label fx:id="close_button" alignment="CENTER" contentDisplay="CENTER" text="х" textAlignment="CENTER" GridPane.columnIndex="1">
+                            <padding>
+                                <Insets right="10.0" />
+                            </padding>
+                        </Label>
+                        <Label fx:id="title_bar" text="Label" />
+                    </children>
+                </GridPane>
+                <HBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="77.0" prefWidth="133.0" style="-fx-background-color: #000;" stylesheets="@../../style/style.css">
+               <children>
+                  <ScrollPane fx:id="scroll" prefHeight="200.0" prefWidth="200.0" styleClass="mylistview" stylesheets="@../../style/style.css">
+                    <content>
+                      <AnchorPane fx:id="scrollBack" minHeight="0.0" minWidth="0.0" prefHeight="74.0" prefWidth="131.0" style="-fx-background-color: rgba(0,0,0,0);" />
+                    </content>
+                     <opaqueInsets>
+                        <Insets right="20.0" top="20.0" />
+                     </opaqueInsets>
+                  </ScrollPane>
+               </children>
+               <styleClass>
+                  <String fx:value="derevo" />
+                  <String fx:value="dragicon" />
+               </styleClass>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</fx:root>

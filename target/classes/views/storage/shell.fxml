@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<HBox prefHeight="129.0" prefWidth="480.0" style="-fx-background-color: rgba(0,0,0,0);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.electro_store.temp.storage.ShellController">
+   <children>
+      <VBox prefHeight="129.0" prefWidth="485.0">
+         <children>
+            <HBox prefHeight="142.0" prefWidth="460.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="47.0" prefWidth="68.0">
+                     <children>
+                        <Label fx:id="indexLabel" text="1">
+                           <font>
+                              <Font name="Century Gothic" size="28.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label fx:id="capacityLabel" text="20lbs">
+                           <font>
+                              <Font name="Century Gothic" size="27.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <ScrollPane fx:id="scrollPane" prefHeight="109.0" prefWidth="313.0" style="-fx-background-color: rgba(255,255,255,0.5);" styleClass="mylistview" stylesheets="@../../style/style.css">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="299.0" />
+                     </content>
+                  </ScrollPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="0.0" prefWidth="460.0">
+               <children>
+                  <Rectangle arcWidth="5.0" height="9.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="480.0">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.23137255012989044" green="0.11764705926179886" blue="0.007843137718737125" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.49390243902439024">
+                                 <color>
+                                    <Color red="0.8026315569877625" green="0.5422098636627197" blue="0.26382797956466675" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.22368420660495758" green="0.17511573433876038" blue="0.015533626079559326" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Rectangle>
+               </children>
+            </HBox>
+            <Rectangle arcWidth="5.0" height="11.0" opacity="0.6" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="480.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="0.09004739336492891" startX="1.0" startY="0.985781990521327">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.23000000417232513" green="0.11591999977827072" blue="0.009200000204145908" opacity="0.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+         </children>
+      </VBox>
+   </children>
+</HBox>

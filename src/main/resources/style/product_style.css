@@ -1,0 +1,32 @@
+table-view {
+    -fx-base: #1d1d1d;
+    -fx-control-inner-background: #1d1d1d;
+    -fx-background-size: cover;
+    -fx-table-cell-border-color: rgba(255, 0, 0, 0);
+    -fx-table-header-border-color: transparent;
+    -fx-padding: 5;
+}
+.table-view .column-header-background {
+    -fx-background-image: url('file:C:/Users/user/IdeaProjects/electro_store_client/src/main/resources/images/button_fon.png');
+    -fx-background-size: cover;
+}
+.table-view .column-header, .table-view .filler {
+    -fx-size: 50;
+    -fx-border-width: 0 0 5 0;
+    -fx-background-color: transparent;
+    -fx-border-color:
+            transparent
+            transparent #ffffff
+            transparent;
+    -fx-border-insets: 0 0 2 0;
+}
+.table-view .column-header .label {
+    -fx-font-size: 20pt;
+    -fx-font-family: "Century Gothic";
+    -fx-text-fill: white;
+    -fx-alignment: center-left;
+    -fx-opacity: 1;
+}
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: #ff9d00;
+}

@@ -1,0 +1,124 @@
+.table-view {
+    -fx-base: #1d1d1d;
+    -fx-control-inner-background: #1d1d1d;
+    -fx-background-color: #2f2f2f;
+    -fx-table-cell-border-color: rgba(28, 28, 28, 0);
+    -fx-table-header-border-color: transparent;
+    -fx-padding: 5;
+}
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+.table-view .column-header, .table-view .filler {
+    -fx-size: 50;
+    -fx-border-width: 0 0 2 0;
+    -fx-background-color: transparent;
+    -fx-border-color:
+            transparent
+            transparent
+            derive(-fx-base, 50%)
+            transparent;
+    -fx-border-insets: 0 10 2 0;
+}
+.table-view .column-header .label {
+    -fx-font-size: 20pt;
+    -fx-font-family: "Century Gothic";
+    -fx-text-fill: white;
+    -fx-alignment: center-left;
+    -fx-opacity: 1;
+}
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: #ff9d00;
+}
+.split-pane:horizontal > .split-pane-divider {
+    -fx-border-color: transparent #1d1d1d rgba(0, 0, 0, 0) #1d1d1d;
+    -fx-background-color: rgba(0, 0, 0, 0), derive(#000,20%);
+}
+.split-pane {
+    -fx-padding: 1 0 0 0;
+}
+.tab-pane .tab-header-area .tab-header-background{
+    -fx-opacity: 0;
+}
+.tab-pane{
+    -fx-tab-min-width: 90px;
+    -fx-tab-min-height: 30px;
+}
+.tab{
+    -fx-background-insets: 0 0 0 0,0,0;
+}
+.tab-pane .tab{
+    -fx-background-color: white;
+    -fx-font-family: "Century Gothic";
+    -fx-pref-width: 200;
+    -fx-pref-height: 25;
+}
+.tab-pane .tab:selected{
+    -fx-background-color: white;
+    -fx-text-fill: #000;
+
+    -fx-border-color: #ff9d00;
+    -fx-border-width: 0px 0px 4px 0px;
+}
+.tab .tab-label{
+    -fx-alignment: CENTER;
+    -fx-text-fill: #A5A9B4;
+}
+.tab:selected .tab-label{
+    -fx-alignment: CENTER;
+    -fx-text-fill: #000;
+}
+.mylistview{
+    -fx-background-color: rgba(201, 37, 37, 0);
+    -fx-border-color: transparent;
+}
+.mylistview .scroll-bar{
+    -fx-background-color: rgba(211, 15, 15, 0);
+}
+.mylistview .scroll-bar:horizontal .increment-button ,
+.mylistview .scroll-bar:horizontal .decrement-button {
+    -fx-background-color :rgba(0,0,0,0);
+    -fx-background-radius : 0.0em;
+    -fx-padding :0.0 0.0 5.0 0.0;
+
+}
+
+.mylistview .scroll-bar:vertical .increment-button ,
+.mylistview .scroll-bar:vertical .decrement-button {
+    -fx-background-color :rgba(0,0,0,0);
+    -fx-background-radius : 0.0em;
+    -fx-padding :0.0 5.0 0.0 0.0;
+
+}
+
+.mylistview .scroll-bar .increment-arrow,
+.mylistview .scroll-bar .decrement-arrow{
+    -fx-shape : " ";
+    -fx-background-color :rgba(0,0,0,0);
+    -fx-padding :0.15em 0.0;
+}
+
+.mylistview .scroll-bar:vertical .increment-arrow,
+.mylistview .scroll-bar:vertical .decrement-arrow{
+    -fx-shape : " ";
+    -fx-background-color :rgba(0,0,0,0);
+    -fx-padding :0.0 0.15em;
+}
+.mylistview.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+.mylistview .scroll-bar:horizontal .thumb,
+.mylistview .scroll-bar:vertical .thumb {
+    -fx-background-color : rgba(35, 23, 23, 0.68);
+    -fx-background-insets : 2.0, 0.0, 0.0;
+    -fx-background-radius : 0.5em;
+    -fx-padding :0.15em 0.0;
+}
+
+.mylistview .scroll-bar:horizontal .thumb:hover,
+.mylistview .scroll-bar:vertical .thumb:hover {
+    -fx-background-color : rgba(35, 23, 23, 0.87);
+    -fx-background-insets : 2.0, 0.0, 0.0;
+    -fx-background-radius : 2.0em;
+    -fx-padding :0.15em 0.0;
+}

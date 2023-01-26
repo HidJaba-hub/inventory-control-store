@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="547.0" prefWidth="848.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.electro_store.temp.user.UserController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4d4d4d" height="547.0" layoutX="628.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="220.0" />
+      <ImageView fx:id="image" fitHeight="295.0" fitWidth="299.0" layoutX="461.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/user.jpg" />
+         </image></ImageView>
+      <Label fx:id="nameField" layoutX="53.0" layoutY="27.0" prefHeight="75.0" prefWidth="407.0" text="Имя" textFill="WHITE">
+         <font>
+            <Font size="52.0" />
+         </font>
+      </Label>
+      <Label fx:id="surnameField" layoutX="53.0" layoutY="83.0" prefHeight="48.0" prefWidth="407.0" text="Фамилия" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic" size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="phoneField" layoutX="53.0" layoutY="193.0" prefHeight="48.0" prefWidth="363.0" text="телефон" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic" size="28.0" />
+         </font>
+      </Label>
+      <Text fill="WHITE" layoutX="54.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Телефон:">
+         <font>
+            <Font size="17.0" />
+         </font></Text>
+      <Text fill="WHITE" layoutX="53.0" layoutY="351.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Должность:">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cd7e21" height="64.0" layoutX="50.0" layoutY="367.0" stroke="BLACK" strokeType="INSIDE" width="370.0" />
+      <Label fx:id="postField" layoutX="66.0" layoutY="375.0" prefHeight="48.0" prefWidth="349.0" text="нет" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic" size="34.0" />
+         </font>
+      </Label>
+      <Text fill="WHITE" layoutX="54.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Количество отработанных часов:">
+         <font>
+            <Font size="17.0" />
+         </font></Text>
+      <Label fx:id="hoursField" layoutX="53.0" layoutY="257.0" prefHeight="48.0" prefWidth="407.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic" size="28.0" />
+         </font>
+      </Label>
+      <Circle fill="#cd7e21" layoutX="756.0" layoutY="93.0" radius="32.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Button layoutX="48.0" layoutY="454.0" mnemonicParsing="false" onAction="#editUser" prefHeight="48.0" prefWidth="370.0" styleClass="button3" stylesheets="@../../style/style.css" text="Редактировать профиль">
+         <font>
+            <Font name="Century Gothic" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

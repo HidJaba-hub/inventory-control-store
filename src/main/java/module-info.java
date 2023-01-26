@@ -1,0 +1,57 @@
+module by.jcompany.bonus_system {
+    requires javafx.controls;
+    requires javafx.fxml;
+    requires com.google.gson;
+    requires lombok;
+    requires javafx.base;
+    requires javafx.graphics;
+    requires java.sql;
+    requires itextpdf;
+
+    exports com.company.electro_store.temp;
+    opens com.company.electro_store.temp to javafx.fxml;
+    exports com.company.electro_store.dto.storage;
+    opens com.company.electro_store.dto.storage to com.google.gson;
+    exports com.company.electro_store.dto.persons;
+    opens com.company.electro_store.dto.persons to com.google.gson;
+    exports com.company.electro_store.dto;
+    opens com.company.electro_store.dto.accountant to com.google.gson;
+    exports com.company.electro_store.dto.accountant;
+    opens com.company.electro_store.dto to javafx.fxml;
+    exports com.company.electro_store.util.managers;
+    opens com.company.electro_store.util.managers to javafx.fxml;
+    exports com.company.electro_store.functions;
+    opens com.company.electro_store.functions to javafx.fxml;
+    exports com.company.electro_store;
+    opens com.company.electro_store to javafx.fxml;
+    exports com.company.electro_store.temp.authorization;
+    opens com.company.electro_store.temp.authorization to javafx.fxml;
+    exports com.company.electro_store.temp.user;
+    opens com.company.electro_store.temp.user to javafx.fxml;
+    exports com.company.electro_store.temp.worker.person;
+    opens com.company.electro_store.temp.worker.person to javafx.fxml;
+    exports com.company.electro_store.temp.worker.post;
+    opens com.company.electro_store.temp.worker.post to javafx.fxml;
+    exports com.company.electro_store.temp.product;
+    opens com.company.electro_store.temp.product to javafx.fxml;
+    exports com.company.electro_store.temp.other;
+    opens com.company.electro_store.temp.other to javafx.fxml;
+    exports com.company.electro_store.temp.other.ProductCount;
+    opens com.company.electro_store.temp.other.ProductCount to javafx.fxml;
+    exports com.company.electro_store.temp.other.cheque;
+    opens com.company.electro_store.temp.other.cheque to javafx.fxml;
+    exports com.company.electro_store.temp.other.Marking;
+    opens com.company.electro_store.temp.other.Marking to javafx.fxml;
+    exports com.company.electro_store.temp.other.PersonsCount;
+    opens com.company.electro_store.temp.other.PersonsCount to javafx.fxml;
+    exports com.company.electro_store.temp.other.productDiagram;
+    opens com.company.electro_store.temp.other.productDiagram to javafx.fxml;
+    exports com.company.electro_store.temp.other.personDiagram;
+    opens com.company.electro_store.temp.other.personDiagram to javafx.fxml;
+    exports com.company.electro_store.temp.draganddrop;
+    exports com.company.electro_store.temp.storage;
+    exports com.company.electro_store.functions.accountant;
+    opens com.company.electro_store.temp.draganddrop to com.google.gson, javafx.fxml;
+    opens com.company.electro_store.temp.storage to com.google.gson, javafx.fxml;
+
+}

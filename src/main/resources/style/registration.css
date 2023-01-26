@@ -1,0 +1,33 @@
+.text-field2
+{
+    -fx-background-color: rgba(0,0,0,0);
+    -fx-border-color: #fff;
+    -fx-border-radius: 0em;
+    -fx-text-align: left;
+    -fx-opacity: 1;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-font-family: 'Century Gothic', sans;
+    -fx-text-fill: #fff;
+}
+.text-field2:hover
+{
+    -fx-font-size: 120%;
+    -fx-border-radius: 0em;
+}
+.text-field2:pressed
+{
+    -fx-text-size: 110%;
+    -fx-text-align: left;
+    -fx-border-radius: 0em;
+    -fx-background-color: #000;
+    -fx-opacity: .2;
+    -fx-border-color: #fff;
+}
+.text-field2:focused{
+    -fx-text-size: 110%;
+    -fx-text-align: left;
+    -fx-border-radius: 0em;
+    -fx-background-color: rgba(0,0,0,0.2);
+    -fx-background-radius: 0em;
+    -fx-border-color: #fff;
+}

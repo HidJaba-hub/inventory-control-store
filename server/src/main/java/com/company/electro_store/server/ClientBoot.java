@@ -33,7 +33,6 @@ public class ClientBoot{
             Response serverResponse;
             Request clientRequest;
 
-            //do {
                 clientRequest=tcpConnection.getRequest();
                 try {
                     System.out.println("client #" + clientNumber + " -> server: ");
@@ -50,7 +49,6 @@ public class ClientBoot{
                     System.out.println(serverResponse);
                     tcpConnection.makeResponse(serverResponse);
                 }
-                //} while (!quit);
         } catch (SocketException socketException){
             tcpConnection.disconnect();
             return;

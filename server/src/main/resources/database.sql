@@ -55,6 +55,7 @@ create table product
     name          char(50) null,
     number        double   null,
     nominal_price double   null,
+    weight        double   null,
     constraint FK_product_property
         foreign key (property_id) references property (property_id),
     constraint FK_product_shell

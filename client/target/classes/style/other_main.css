@@ -9,33 +9,33 @@
 
 }
 .button.red{
-    -fx-background-image: url('file:C:/Users/user/IdeaProjects/electro_store_client/src/main/resources/images/11.png');
+    -fx-background-image: url('../images/11.png');
     -fx-text-fill: #ae1818;
     -fx-font-size: 23px;
 }
 .button.blue{
-    -fx-background-image: url('file:C:/Users/user/IdeaProjects/electro_store_client/src/main/resources/images/22.png');
+    -fx-background-image: url('../images/22.png');
     -fx-text-fill: #2251bf;
     -fx-font-size: 23px;
 }
 .button.brown{
-    -fx-background-image: url('file:C:/Users/user/IdeaProjects/electro_store_client/src/main/resources/images/33.png');
+    -fx-background-image: url('../images/33.png');
     -fx-text-fill: #803104;
     -fx-font-size: 23px;
 }
 .button.green{
-    -fx-background-image: url('file:C:/Users/user/IdeaProjects/electro_store_client/src/main/resources/images/42.png');
+    -fx-background-image: url('../images/42.png');
     -fx-text-fill: #2a4c80;
     -fx-font-size: 23px;
 }
 .button.violet{
-    -fx-background-image: url('file:C:/Users/user/IdeaProjects/electro_store_client/src/main/resources/images/52.png');
+    -fx-background-image: url('../images/52.png');
     -fx-background-size: cover;
     -fx-text-fill: #523ce5;
     -fx-font-size: 23px;
 }
 .button.orange{
-    -fx-background-image: url('file:C:/Users/user/IdeaProjects/electro_store_client/src/main/resources/images/62.png');
+    -fx-background-image: url('../images/62.png');
     -fx-background-size: cover;
     -fx-text-fill: #ff8700;
     -fx-font-size: 23px;

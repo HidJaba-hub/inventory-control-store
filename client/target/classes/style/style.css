@@ -1,34 +1,34 @@
 .style{
-    -fx-background-image: url('file:C:/Users/user/IdeaProjects/electro_store_client/src/main/resources/images/basement_1.png');
+    -fx-background-image: url('../images/basement_1.png');
     -fx-background-size: cover;
 }
 .style2{
-    -fx-background-image: url('file:C:/Users/user/IdeaProjects/electro_store_client/src/main/resources/images/background_register.png');
+    -fx-background-image: url('../images/background_register.png');
     width:200%;
     height:200%;
 }
 .style3{
-    -fx-background-image: url('file:C:/Users/user/IdeaProjects/electro_store_client/src/main/resources/images/background.png');
+    -fx-background-image: url('../images/background.png');
     -fx-background-size: cover;
 }
 .plitka{
-    -fx-background-image: url('file:C:/Users/user/IdeaProjects/electro_store_client/src/main/resources/images/plitka5.jpg');
+    -fx-background-image: url('../images/plitka5.jpg');
     -fx-background-size: cover;
 }
 .plitka2{
-    -fx-background-image: url('file:C:/Users/user/IdeaProjects/electro_store_client/src/main/resources/images/plitka7.jpg');
+    -fx-background-image: url('../images/plitka7.jpg');
     -fx-background-size: cover;
 }
 .derevo2 {
-    -fx-background-image: url('file:C:/Users/user/IdeaProjects/electro_store_client/src/main/resources/images/derevo3.jpg');
+    -fx-background-image: url('../images/derevo3.jpg');
     -fx-background-size: cover;
 }
 .derevo {
-    -fx-background-image: url('file:C:/Users/user/IdeaProjects/electro_store_client/src/main/resources/images/derevo.jpg');
+    -fx-background-image: url('../images/derevo.jpg');
     -fx-background-size: cover;
 }
 .fon3{
-    -fx-background-image: url('file:C:/Users/user/IdeaProjects/electro_store_client/src/main/resources/images/fon4.png');
+    -fx-background-image: url('../images/fon4.png');
     -fx-background-size: cover;
 }
 .button

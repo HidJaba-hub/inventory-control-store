@@ -27,8 +27,10 @@ public class Shell {
         this.rackName=new SimpleStringProperty(rackName);
         this.shellId=new SimpleStringProperty(shellId);
         this.place=place;
-        for(Product p:product){
-            capacity-=p.getWeight().get();
+        if(product!=null) {
+            for (Product p : product) {
+                capacity -= p.getWeight().get();
+            }
         }
         this.capacity=new SimpleDoubleProperty(capacity);
         this.product=product;
